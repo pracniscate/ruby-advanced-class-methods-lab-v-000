@@ -67,10 +67,10 @@ class Song
     song = self.new_from_filename(file_name)
     # tap into a method chain to perform operations on intermediate results within the chain
     song.tap { |song| self.all << song }
-  end  
+  end
 
   def self.destroy_all
     @@all.clear
   end
-  
+
 end
