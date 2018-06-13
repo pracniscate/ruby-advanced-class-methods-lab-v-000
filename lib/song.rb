@@ -54,11 +54,12 @@ class Song
     # parse the relevant components
     data = file_name.split(" - ")
     song.artist_name = data[0]
-    name = data[1].split(".mp3")
+    # return a copy of str with all occurrences of patterns substituted for the second argument
+    name = data[1].gsub(".mp3", "")
     #return a new song instance with the song name set to song name and the artist name set to artist
     song = self.new
-    song.name = name[1]
-    artist_name = artist[0]
+    song.name = name
+    song.artist_name = artist_name
     song
   end
 
