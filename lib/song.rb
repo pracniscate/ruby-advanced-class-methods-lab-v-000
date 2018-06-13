@@ -57,7 +57,8 @@ class Song
     name = data[1].split(".mp3")
     #return a new song instance with the song name set to song name and the artist name set to artist
     song = self.new
-    song.name = name[0]
+    song.name = name[1]
+    artist_name = artist[0]
     song
   end
 
