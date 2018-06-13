@@ -54,7 +54,7 @@ class Song
     # parse the relevant components
     data = file_name.split(" - ")
     song.artist_name = data[0]
-    name = data[1].split(".")
+    name = data[1].split(".mp3")
     #return a new song instance with the song name set to song name and the artist name set to artist
     song = self.new
     song.name = name[0]
