@@ -53,7 +53,7 @@ class Song
   def self.new_from_filename(file_name)
     # parse the relevant components
     data = file_name.split(" - ")
-    song.artist_name = data[0]
+    artist_name = data[0]
     # return a copy of str with all occurrences of patterns substituted for the second argument
     name = data[1].gsub(".mp3", "")
     #return a new song instance with the song name set to song name and the artist name set to artist
